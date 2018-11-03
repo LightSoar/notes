@@ -50,6 +50,11 @@ TODO
 1. data modeling
     * DA, AC, HA, Prog
     * 3rd party specs and extensions (e.g. PLCopen)
+1. Data transport
+2. Infromation modeling
+    * Information Model specification
+    * Object oriented techniques (type hierarchies, inheritance)
+    * Done on server side
 
 ### Specifications
 The key documents are in bold:
