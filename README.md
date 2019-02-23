@@ -3,3 +3,4 @@
 1. [PLC UDFB for serial comms](posts/2018-09-18-plc-serial-udfb.md)
 1. [Modbus cheatsheet](posts/2018-09-18-modbus-cheatsheet.md)
 1. [Docker cheatsheet](posts/2018-10-15-docker-cheatsheet.md)
+1. [Recursion patterns](posts/2018-02-23-recursion-patterns.md)
