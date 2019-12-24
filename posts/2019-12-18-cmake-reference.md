@@ -2,10 +2,15 @@
 ## Build
 Out-of-source-build inside `build` folder:
 ```bash
-~/path/to/repo $ cmake -S . -B build
+~/path/to/repo $ cmake -S . -B build # -S for source dir, -B for build dir
 ~/path/to/repo $ cmake --build build
 ~/path/to/repo $ cmake --build build --target install
 ```
+## Debug
+`cmake --build build`:
+* `-v`
+* `--trace`
+* `--trace-source="filename"`
 
 Additional flags:
 * `-v`: verbose
@@ -43,7 +48,7 @@ target_link_libraries(another PUBLIC one)
 ```
 
 * PUBLIC doesn't mean much for an executable; for a library it lets CMake know that any targets that link to this target must also need that include directory.
-```cmake```
-add_library(another STATIC another.cpp another.h)
-target_link_libraries(another PUBLIC one)
-```
+
+
+# References
+* [An intoduction to modern cmake](https://cliutils.gitlab.io/modern-cmake/)
