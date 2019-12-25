@@ -16,7 +16,6 @@ Out-of-source-build inside `build` folder:
 Additional flags:
 * `-v`: verbose
 * `-j N`: parallel builds on N cores
-* `--trace [--trace-source="filename"]`: debug [individual] CMake files
 
 ## Do not use
 * Global functions: `link_directories`, `include_libraries`
