@@ -57,3 +57,7 @@
 `docker network disconnect alpine-net alpine1`
 
 `docker network rm alpine net`
+
+## Frequent
+* Remove all stopped containers: `docker rm $(docker ps -a -q)`
+* Remove all images:`docker rmi $(docker images -q) --force`
