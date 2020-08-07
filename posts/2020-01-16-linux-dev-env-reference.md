@@ -24,3 +24,6 @@ f() {
     grep -Irnw "$1" .
 }
 ```
+
+## Whitespaces
+* Expand tabs to 3 spaces: `FILE=io.c && expand -i -t 3 ${FILE} | sponge ${FILE}` ([ref](https://stackoverflow.com/a/11094413))
