@@ -1,18 +1,27 @@
-* Create & checkout new branch `git checkout -b <branch_name>`
-* Push new branch to origin `git push -u origin <branch_name>`
+## Checkout
+```bash
+git checkout -b <branch_name>  # create & checkout new branch 
+```
+
+## Push
+```
+git push -u origin <branch_name>  # push new branch to origin 
+```
 
 ## Amend
-### Amend autor
-`git commit --amend --author="Your Name <account@provider.com>"`
+```bash
+git commit --amend --author="Your Name <account@provider.com>"  # amend author
+```
 
 ## Undo
-### Undo (discard) local changes in file
-`git checkout -- <filename>`
-
-### Undo unpushed commit
+```bash
+git checkout -- path/to/file  # discard local changes in file
+git reset HEAD~  # undo unpushed commit
 ```
-git reset HEAD~
-# do stuff
-git add ...
-git commit -c ORIG_HEAD
+
+## Delete
+```bash
+git push ${remote_name} --delete ${branch_name}  # delete remote branch
+git branch -d ${branch_name}  # delete local, merged branch
+git branch -D ${branch_name}  # force delete local (unmereged) branch
 ```
